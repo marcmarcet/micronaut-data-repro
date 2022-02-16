@@ -30,7 +30,7 @@ open class CreateCompanyController(
         try {
             companyService.create()
         } catch (_: Exception) {
-            // all good, changes should be rolledback now.
+            // all good, changes should be gone now.
         }
 
         // if @Transactional works, should always return 0.
